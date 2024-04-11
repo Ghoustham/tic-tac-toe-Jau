@@ -3,6 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>Tic-Tac-Toe</title>
 </head>
@@ -12,28 +15,39 @@
             <h1 class="title" >Tic-Tac-Toe Jau</h1>
         </div>
         <div class="container-display">
-            <h2 class="title-display">Results</h2>
+        <div class="container-button">
+            <button class="play-button" id="play">Play Next!</button>
+        </div>
+        <div class="test-button">
+            <button class="run-button">Restart Game</button>
+        </div>
+            <h2 class="round">Round: <span class="round-number"></span></h2>
             <div class="score-container">
-                <p class="title-game"></p>
-                <p class="player1-results"></p>
-                <p class="player2-results"></p>
+                <p class="player1">X -> Player 1 Score: <span class='player1-score'></span></p>
+                <p class="player2">O -> Player 2 Score: <span class='player2-score'></span></p>
 
             </div>
                 
+        </div >
+        <div class = 'message'>
+            <p class="winner-message">
+                
+            </p>
         </div>
 
         <div class="game-container">
-            
-            <div class="card-container">a</div>
-            <div class="card-container">a</div>
-            <div class="card-container">a</div>
-            <div class="card-container">a</div>
-            <div class="card-container">a</div>
-            <div class="card-container">a</div>
-            <div class="card-container">a</div>
-            <div class="card-container">a</div>
-            <div class="card-container">a</div>
-            
+            <div class="cell bottom " data-x="0" data-y="0"></div>
+            <div class="cell bottom " data-x="0" data-y="1"></div>
+            <div class="cell bottom " data-x="0" data-y="2"></div>
+
+            <div class="cell bottom " data-x="1" data-y="0"></div>
+            <div class="cell bottom " data-x="1" data-y="1"></div>
+            <div class="cell bottom " data-x="1" data-y="2"></div>
+
+            <div class="cell right" data-x="2" data-y="0"></div>
+            <div class="cell cell1" data-x="2" data-y="1"></div>
+            <div class="cell" data-x="2" data-y="2"></div>
+    
         </div>
 
     </div>
